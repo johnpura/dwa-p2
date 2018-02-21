@@ -1,0 +1,48 @@
+/**
+ * styles.css by John Pura
+ * john.pura@comcast.net
+ * 
+ * Custom stylesheet to overide external CSS framework code
+ */
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+html, body {
+    color: #222;
+    font-size: 1em;
+    height: 100%;
+    width: 100%
+}
+
+form {
+    background-color: powderblue;
+    border-radius: 1em 2em;
+    width: 500px;
+    padding: 15px;
+}
+
+form p {
+    font: 200 16px Arial; 
+    margin: 15px;
+    padding: 5px;
+}
+
+th {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+td {
+    text-align: center;
+    font-size: 2em;
+    padding: 15px;
+}
+
+.page-wrapper {
+    width: 50%;
+    height: 100%;
+    margin: 70px auto;
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Project 2</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <!-- CSS Libraries-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <form id="loanForm" method="post" action="summary.php">
+                <h1 class="is-size-2 has-text-grey-darker has-text-centered is-uppercase">Loan Calculator</h1>
+                <p>This is a simple loan calculator that will determine how much you can borrow based on the monthly payments you can afford, interest rate and the number of payments.</p>
+                <!-- Monthly Payments -->
+                <div class="field">
+                    <label class="label">Monthly Payments</label>
+                    <div class="control has-icons-left">
+                        <input class="input is-medium" type="text" id="monthlyPayments" name="monthlyPayments" required>
+                        <span class="icon is-medium is-left">
+                            <i class="fas fa-dollar-sign"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- Interest Rate -->
+                <div class="field">
+                    <label class="label">Interest Rate</label>
+                    <div class="control has-icons-right">
+                        <input class="input is-medium" type="text" id="interestRate" name="interestRate" required>
+                        <span class="icon is-medium is-right">
+                            <i class="fas fa-percent"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- Loan Period -->
+                <div class="field">
+                    <label class="label">Number of Payments (in months)</label>
+                    <div class="control has-icons-left">
+                        <div class="select is-medium">
+                            <select name="loanTerm" id="loanTerm">
+                                <option value="12">12</option>
+                                <option value="24">24</option>
+                                <option value="36">36</option>
+                                <option value="48">48</option>
+                                <option value="60">60</option>
+                                <option value="72">72</option>
+                                <option value="84">84</option>
+                            </select>
+                        </div>
+                        <div class="icon is-small is-left">
+                            <i class="far fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Whole dollar amount -->
+                <div class="field">
+                    <label class="checkbox">
+                    <input type="checkbox" name="wholeDollar">
+                        Round up to the nearest dollar amount?
+                    </label>
+                </div>
+                <!-- Form buttons -->
+                <div class="field is-grouped is-grouped-centered">
+                    <!-- Calculate -->
+                    <div class="control">
+                        <input id="calculateLoan" class="button is-info is-medium is-outlined" type="submit" value="Calculate">
+                    </div>
+                    <!-- Clear -->
+                    <div class="control">
+                        <input class="button is-info is-medium is-outlined" type="reset" value="Clear">
+                    </div>
+                </div>
+            </form> 
+        </div>
+    </body>
+</html>
