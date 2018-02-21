@@ -12,7 +12,7 @@ This is a simple loan calculator that will determine how much you can borrow bas
 * Font Awesome <https://fontawesome.com>
 
 ## Code style divergences
-* Used the <div> elements per the Bulma CSS documentation
+* Used the `div` elements per the Bulma CSS documentation
 
 ## Notes for instructor
 * Error with the W3 Validator is due to embedded PHP code
