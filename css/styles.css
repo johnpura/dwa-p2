@@ -8,6 +8,11 @@
 /* ==========================================================================
    Custom styles
    ========================================================================== */
+.page-wrapper {
+    width: 50%;
+    height: 100%;
+    margin: 70px auto;
+}
 
 html, body {
     color: #222;
@@ -17,7 +22,7 @@ html, body {
 }
 
 form {
-    background-color: powderblue;
+    background-color: #b0e0e6;
     border-radius: 1em 2em;
     width: 500px;
     padding: 15px;
@@ -39,10 +44,4 @@ td {
     text-align: center;
     font-size: 2em;
     padding: 15px;
-}
-
-.page-wrapper {
-    width: 50%;
-    height: 100%;
-    margin: 70px auto;
 }
